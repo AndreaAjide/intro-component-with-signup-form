@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Red);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left {
+  max-width: 450px;
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.left h1 span {
+  font-weight: 700;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0f0f0;
+}
+
+.right {
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info {
+  background-color: var(--Blue);
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 14px 20px;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--Dark-Blue);
+  font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+  color: var(--Grayish-Blue);
+}
+
+button {
+  padding: 15px;
+  background-color: var(--Green);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(154, 59%, 45%);
+}
+
+.TC {
+  font-size: 8px;
+  color: var(--Grayish-Blue);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.TC span {
+  color: var(--Red);
+  font-weight: 600;
+  cursor: pointer;
+}
